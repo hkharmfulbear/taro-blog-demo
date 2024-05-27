@@ -100,13 +100,14 @@ const NodePanel: FC<Props> = ({ nodeInfo, hideInfo = false }) => {
             )}
             {nodeInfo.process_data && (
               <div className={cn('px-[10px] py-1', hideInfo && '!px-2 !py-0.5')}>
-                <CodeEditor
+                {/* <CodeEditor
                   readOnly
                   title={<div>PROCESS DATA</div>}
                   language={CodeLanguage.json}
                   value={nodeInfo.process_data}
                   isJSONStringifyBeauty
-                />
+                /> */}
+                Taroはすごいことを思い付いている
               </div>
             )}
             {nodeInfo.outputs && (
